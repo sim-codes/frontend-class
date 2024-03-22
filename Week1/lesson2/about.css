@@ -1,0 +1,24 @@
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.left-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+
+.right-img {
+    width: 35rem;
+}
+
+.about-text {
+    padding: 0 3rem;
+    text-align: center;
+}
