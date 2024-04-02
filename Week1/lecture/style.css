@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
 
-body {
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Roboto, sans-serif;
     background-color: #fff;
 }
 
@@ -17,7 +19,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 0 10%; */
     height: 10vh;
     border-bottom: 1px solid #999;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -41,10 +42,11 @@ nav a {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
     height: 90%;
 }
 
-.about-btn {
+.more-btn {
     outline: none;
     padding: 1rem;
     border: none;
@@ -56,8 +58,19 @@ nav a {
     text-decoration: none;
 }
 
-.user {
-    border: 1rem solid black;
+.image-container{
+    border: 1rem solid rgb(0, 0, 0);
+    padding: .5rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    width: 30%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.image-container img {
+    height: 100%;
+    object-fit: cover;
 }
 
 .hero-section p {
@@ -66,26 +79,26 @@ nav a {
 
 h1 {
     font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 span {
     color: #580000;
 }
 
-#contact-me {
+#contact {
+    margin: 1rem;
     height: 70vh;
 }
 
-.footer-bottom {
+.copyrights-ctn {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 10vh;
-    border-top: 1px solid #999;
-    background-color: white;
 }
 
-.contact-form form {
+#contact form {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -94,39 +107,36 @@ span {
     gap: 1rem;
 }
 
-.contact-form input {
+#contact input {
     width: 50%;
     padding: 1rem;
     border: 1px solid #999;
     border-radius: 5px;
 }
 
-.contact-form textarea {
+#contact textarea {
     width: 50%;
     padding: 1rem;
     border: 1px solid #999;
     border-radius: 5px;
+    height: 50vh;
 }
 
-.contact-form button {
+#contact button {
     padding: 1rem;
     border: 1px solid #999;
     border-radius: 5px;
     background-color: #580000;
     color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    width: 50%;
 }
 
-.contact-form input:focus, .contact-form textarea:focus{
+#contact input:focus, #contact textarea:focus{
     outline: none;
     transition: 0.3s;
     border: 1px solid #580000;
 }
 
-.contact-form button:hover {
+#contact button:hover {
     background-color: #999;
     color: #580000;
 }
-
