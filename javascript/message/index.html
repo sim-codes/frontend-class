@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            margin: 0 auto;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text-ctn{
+            border-radius: 2rem;
+            width: 40vw;
+            height: auto;
+            padding: 3rem;
+        }
+
+        .form-control {
+            height: 5rem;
+            color: black;
+        }
+
+        .txt-footer {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            padding: 0 2rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+
+        .error:focus, .error {
+            outline: none;
+            border: 2px solid red;
+        }
+
+        span {
+            font-weight: bold;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-ctn bg-dark">
+            <h1 class="display-3">
+                Character Counter
+            </h1>
+
+            <input type="text" class="form-control mb-4" placeholder="Please enter your message" id="inp">
+
+            <div class="txt-footer">
+                <p>Total characters: <span id="total-text">0</span></p>
+                <p>Remaining characters: <span id="rem-text">10</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="./charCounter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
